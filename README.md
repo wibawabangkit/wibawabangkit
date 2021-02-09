@@ -1,9 +1,7 @@
-<h1 align="center">Hi 👋, I'm Wibawa Bangkit</h1>
+<h1 align="center">Hi 👋</h1>
 <h3 align="center">A Passionate Mobile Developer From Jakarta</h3>
 
-- 🌱 I’m currently learning **Mobile Android**
 
-- ⚡ Fun fact **Keep Learning**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
