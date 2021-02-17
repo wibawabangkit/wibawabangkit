@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Wibawa Bangkit</h1>
+<h1 align="center">Hi <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif"><img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px" style="max-width:100%;"></a>, I'm Wibawa Bangkit</h1>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/bangkit_31" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="bangkit_31" height="30" width="40" /></a>
