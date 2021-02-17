@@ -5,6 +5,5 @@
 </p>
 
 
-<p><img align="center_horizontal" src="https://github-readme-stats.vercel.app/api/top-langs?username=wibawabangkit&show_icons=true&locale=en&layout=compact" alt="wibawabangkit" /></p>
-<p>
-</p>
+
+
