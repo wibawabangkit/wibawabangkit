@@ -1,0 +1,72 @@
+{
+  "personalInfo": {
+    "name": "Wibawa",
+    "role": "Senior Full-Stack Developer",
+    "tagline": "The Tech-Driven Problem Solver.",
+    "bio": "Building scalable backend architectures, secure data systems, and managing IT governance."
+  },
+  "techStack": [
+    {
+      "title": "Backend & Frameworks",
+      "icon": "Server",
+      "skills": ["PHP", "CodeIgniter", "Laravel"],
+      "className": "md:col-span-2 md:row-span-2"
+    },
+    {
+      "title": "Infrastructure",
+      "icon": "Container",
+      "skills": ["Docker", "Git", "REST APIs"],
+      "className": ""
+    },
+    {
+      "title": "Frontend & Web",
+      "icon": "Globe",
+      "skills": ["PWA", "WebRTC"],
+      "className": ""
+    },
+    {
+      "title": "R&D",
+      "icon": "Cpu",
+      "skills": ["IoT Integration", "3D Modeling"],
+      "className": "md:col-span-2"
+    }
+  ],
+  "projects": [
+    {
+      "title": "e-Monev System",
+      "highlight": "Hierarchical database architecture & provincial data governance",
+      "icon": "Database",
+      "tags": ["PHP", "PostgreSQL", "REST API"]
+    },
+    {
+      "title": "Smart Neighborhood App",
+      "highlight": "Low-bandwidth CCTV streaming & WebRTC implementation",
+      "icon": "Radio",
+      "tags": ["WebRTC", "PWA", "IoT"]
+    },
+    {
+      "title": "Fitness Tracking PWA",
+      "highlight": "Bluetooth wearable integration for smartwatches",
+      "icon": "Cpu",
+      "tags": ["PWA", "Bluetooth API", "Laravel"]
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2018",
+      "title": "Mobile Developer",
+      "description": "Started career building mobile applications and learning the fundamentals of software development."
+    },
+    {
+      "year": "2020",
+      "title": "Technical Manager",
+      "description": "Led development teams, implemented CI/CD pipelines, and architected scalable solutions."
+    },
+    {
+      "year": "2023",
+      "title": "Project Manager",
+      "description": "Currently managing IT projects, overseeing governance, and driving digital transformation initiatives.",
+      "current": true
+    }
+  ]
+}
