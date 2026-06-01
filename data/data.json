@@ -1,72 +1,107 @@
 {
   "personalInfo": {
-    "name": "Wibawa",
-    "role": "Senior Full-Stack Developer",
-    "tagline": "The Tech-Driven Problem Solver.",
-    "bio": "Building scalable backend architectures, secure data systems, and managing IT governance."
+    "name": "Wibawa Bangkit",
+    "role": "IT Project Manager & System Analyst",
+    "tagline": "Menjembatani Kebutuhan Teknis dengan Tujuan Bisnis.",
+    "bio": "Mantan Mobile Developer dengan pengalaman luas di bidang Project Management dan Analisis Sistem. Memiliki rekam jejak terbukti dalam mengelola seluruh siklus proyek, serta memastikan setiap proyek selesai tepat waktu dan tepat sasaran."
   },
   "techStack": [
     {
-      "title": "Backend & Frameworks",
-      "icon": "Server",
-      "skills": ["PHP", "CodeIgniter", "Laravel"],
+      "title": "Project Management",
+      "icon": "Box",
+      "skills": ["Trello", "Notion", "Leadership", "Managerial", "Communication"],
       "className": "md:col-span-2 md:row-span-2"
     },
     {
-      "title": "Infrastructure",
-      "icon": "Container",
-      "skills": ["Docker", "Git", "REST APIs"],
-      "className": ""
-    },
-    {
-      "title": "Frontend & Web",
-      "icon": "Globe",
-      "skills": ["PWA", "WebRTC"],
-      "className": ""
-    },
-    {
-      "title": "R&D",
+      "title": "System Analysis",
       "icon": "Cpu",
-      "skills": ["IoT Integration", "3D Modeling"],
+      "skills": ["UML", "Flow Diagram", "Figma", "Draw.io", "System Concept"],
+      "className": ""
+    },
+    {
+      "title": "Web Development",
+      "icon": "Globe",
+      "skills": ["PHP", "Laravel", "CodeIgniter", "WordPress", ".NET"],
+      "className": ""
+    },
+    {
+      "title": "Mobile & Apps",
+      "icon": "Radio",
+      "skills": ["Android", "Java", "Bugfixing", "API Integration"],
       "className": "md:col-span-2"
     }
   ],
   "projects": [
     {
-      "title": "e-Monev System",
-      "highlight": "Hierarchical database architecture & provincial data governance",
-      "icon": "Database",
-      "tags": ["PHP", "PostgreSQL", "REST API"]
-    },
-    {
-      "title": "Smart Neighborhood App",
-      "highlight": "Low-bandwidth CCTV streaming & WebRTC implementation",
+      "title": "Aplikasi KIA & GERMAS PAS",
+      "highlight": "Membangun aplikasi mobile Kesehatan Ibu dan Anak serta GERMAS PAS untuk KEMENKES RI.",
       "icon": "Radio",
-      "tags": ["WebRTC", "PWA", "IoT"]
+      "tags": ["Android", "Java", "Figma", "Bugfixing"]
     },
     {
-      "title": "Fitness Tracking PWA",
-      "highlight": "Bluetooth wearable integration for smartwatches",
-      "icon": "Cpu",
-      "tags": ["PWA", "Bluetooth API", "Laravel"]
+      "title": "Dashboard PT Merdeka Copper Gold",
+      "highlight": "Pengembangan Dashboard Perusahaan Pertambangan dari perancangan analisis hingga implementasi.",
+      "icon": "Database",
+      "tags": ["CodeIgniter", "MySQL", "UML", "System Analysis"]
+    },
+    {
+      "title": "Company Profile Udara Sejuk",
+      "highlight": "Pengembangan website Company Profile dari nol untuk keperluan representasi bisnis perusahaan.",
+      "icon": "Globe",
+      "tags": ["WordPress", "Web Development"]
     }
   ],
   "timeline": [
     {
-      "year": "2018",
-      "title": "Mobile Developer",
-      "description": "Started career building mobile applications and learning the fundamentals of software development."
-    },
-    {
-      "year": "2020",
-      "title": "Technical Manager",
-      "description": "Led development teams, implemented CI/CD pipelines, and architected scalable solutions."
-    },
-    {
-      "year": "2023",
-      "title": "Project Manager",
-      "description": "Currently managing IT projects, overseeing governance, and driving digital transformation initiatives.",
+      "year": "Jan 2024 - Sekarang",
+      "title": "Project Manager Officer di PT Heksa Inti Kreasindo",
+      "description": "Mengelola klien, mengatur timeline proyek, merencanakan spesifikasi teknis, serta membuat proposal dan laporan progres rutin.",
       "current": true
+    },
+    {
+      "year": "Mar 2023 - Jan 2026",
+      "title": "Asisten Dosen di STIKOM Cipta Karya Informatika",
+      "description": "Menyusun rencana studi, membuat modul pembelajaran, mengajar, serta menyusun materi tugas dan ujian."
+    },
+    {
+      "year": "Mar 2023 - Sep 2023",
+      "title": "Project Manager Officer di PT Prawathiya Karsa Pradiptha",
+      "description": "Bertanggung jawab dalam manajemen proyek, koordinasi progres dengan klien, dan pembuatan proposal teknis."
+    },
+    {
+      "year": "Agt 2022 - Mar 2023",
+      "title": "Sistem Analis di CV Digital Media Kreasindo",
+      "description": "Merancang konsep aplikasi/website, membuat flow diagram dan UML, serta mendokumentasikan alur sistem secara komprehensif."
+    },
+    {
+      "year": "Des 2021 - Agt 2022",
+      "title": "Sistem Analis (Freelance) di CV Creative Support System",
+      "description": "Mengembangkan Dashboard untuk PT Merdeka Copper Gold dan menyusun arsitektur sistem dari awal hingga siap dikembangkan."
+    },
+    {
+      "year": "Feb 2020 - Agt 2022",
+      "title": "Mobile Developer di CV Digital Media Kreasindo",
+      "description": "Membangun dan memelihara aplikasi mobile KEMENKES RI berbasis Java (Android), merancang UML, serta melakukan integrasi data."
+    },
+    {
+      "year": "Jan 2019 - Jan 2020",
+      "title": "Service Advisor di Chevrolet Cibubur",
+      "description": "Menangani keluhan pelanggan, mengatur jadwal mekanik, serta menyelesaikan sertifikasi General Motor Level Managerial."
+    },
+    {
+      "year": "Agt 2017 - Des 2018",
+      "title": "Teknisi / Mekanik di Chevrolet Pluit",
+      "description": "Melakukan analisa kerusakan, perbaikan, dan perawatan mobil berdasarkan arahan foreman."
+    },
+    {
+      "year": "2019 - 2021",
+      "title": "Ketua & Wakil Ketua BEM (Organisasi)",
+      "description": "Menjabat sebagai Wakil Ketua (2019-2020) dan Ketua (2020-2021) Badan Eksekutif Mahasiswa."
+    },
+    {
+      "year": "2017 - 2021",
+      "title": "S1 Teknik Informatika di STIKOM Cipta Karya Informatika",
+      "description": "Lulus dengan IPK 3.50. Mempelajari fondasi pemrograman dan rekayasa perangkat lunak."
     }
   ]
 }
