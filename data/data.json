@@ -49,6 +49,12 @@
       "highlight": "Pengembangan website Company Profile dari nol untuk keperluan representasi bisnis perusahaan.",
       "icon": "Globe",
       "tags": ["WordPress", "Web Development"]
+    },
+    {
+      "title": "Sistem Pengawasan KEMENKES RI",
+      "highlight": "Sistem Analis untuk 4 website nasional KEMENKES RI (Kualitas Air Minum, TFU, TPM, dan Pelaporan Terpadu Kesehatan Olahraga).",
+      "icon": "Server",
+      "tags": ["System Analysis", "UML", "Flow Diagram", "Government"]
     }
   ],
   "timeline": [
@@ -71,7 +77,7 @@
     {
       "year": "Agt 2022 - Mar 2023",
       "title": "Sistem Analis di CV Digital Media Kreasindo",
-      "description": "Merancang konsep aplikasi/website, membuat flow diagram dan UML, serta mendokumentasikan alur sistem secara komprehensif."
+      "description": "Menjadi Sistem Analis dalam mengembangkan website Pengawasan Kualitas Air Minum Nasional, Tempat Fasilitas Umum (TFU), Tempat Pengolahan Makanan (TPM), dan Sistem Pelaporan Terpadu Kesehatan Olahraga KEMENKES RI. Merancang konsep, flow diagram, dan UML secara komprehensif."
     },
     {
       "year": "Des 2021 - Agt 2022",
