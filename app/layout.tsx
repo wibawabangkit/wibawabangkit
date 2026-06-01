@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Wibawa | Senior Full-Stack Developer & IT Project Manager',
-  description: 'Building scalable backend architectures, secure data systems, and managing IT governance. Full-stack developer specializing in PHP, Laravel, and modern web technologies.',
+  title: 'Wibawa Bangkit',
+  description: 'Experienced IT Professional with comprehensive technical expertise. Possessing a solid career progression from Android Developer and System Analyst to IT Project Manager.',
   generator: 'v0.app',
   icons: {
     icon: [
