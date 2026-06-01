@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Download, Github, Linkedin, Mail, Database, Server, Globe, Cpu, Container, Radio, Box, Menu, X, type LucideIcon } from "lucide-react"
+import { ArrowRight, Download, Github, Linkedin, Mail, Database, Server, Globe, Cpu, Container, Radio, Box, Menu, X, HeartPulse, Activity, Building2, ShieldCheck, Award, Scan, CheckSquare, Users, Stethoscope, type LucideIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -15,6 +15,16 @@ const iconMap: Record<string, LucideIcon> = {
   Cpu,
   Database,
   Radio,
+  Box,
+  HeartPulse,
+  Activity,
+  Building2,
+  ShieldCheck,
+  Award,
+  Scan,
+  CheckSquare,
+  Users,
+  Stethoscope,
 }
 
 // Navigation
@@ -104,20 +114,15 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* 3D Placeholder - Glassmorphism Card */}
+          {/* Image Placeholder */}
           <div className="hidden lg:flex items-center justify-center">
             <div className="relative w-full max-w-md aspect-square">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full animate-pulse" />
               {/* Main card */}
-              <div className="relative glass glass-glow rounded-3xl w-full h-full flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <div className="w-24 h-24 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
-                    <Box className="w-12 h-12 text-primary" />
-                  </div>
-                  <p className="text-sm text-muted-foreground font-mono">3D Object Placeholder</p>
-                  <p className="text-xs text-muted-foreground/60">Interactive Blender model goes here</p>
-                </div>
+              <div className="relative glass glass-glow rounded-3xl w-full h-full overflow-hidden border border-primary/20 flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Tech Abstract" className="w-full h-full object-cover opacity-80 mix-blend-screen" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 border border-primary/20 rounded-2xl" />
@@ -289,46 +294,22 @@ function ContactSection() {
   return (
     <section id="contact" className="px-4 sm:px-6 lg:px-8 py-24 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-primary font-mono text-sm tracking-wider uppercase mb-4">Get in Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-balance">{"Let's Work Together"}</h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Tertarik untuk berkolaborasi dalam proyek IT, konsultasi sistem, atau pengembangan aplikasi? Jangan ragu untuk menghubungi saya secara langsung.
+          </p>
         </div>
 
-        <div className="glass glass-glow rounded-3xl p-8 md:p-12">
-          <form className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  placeholder="Your name"
-                  className="bg-secondary/50 border-border focus:border-primary"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="your@email.com"
-                  className="bg-secondary/50 border-border focus:border-primary"
-                />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                placeholder="Tell me about your project..."
-                rows={5}
-                className="bg-secondary/50 border-border focus:border-primary resize-none"
-              />
-            </div>
-            <Button type="submit" size="lg" className="w-full md:w-auto">
-              Send Message
-              <ArrowRight className="ml-2 h-4 w-4" />
+        <div className="flex justify-center">
+          <a href="mailto:wibawabangkit31@gmail.com">
+            <Button size="lg" className="group h-14 px-8 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
+              <Mail className="mr-3 h-5 w-5" />
+              Hubungi via Email
+              <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-          </form>
+          </a>
         </div>
       </div>
     </section>
@@ -348,7 +329,7 @@ function Footer() {
           
           <div className="flex items-center gap-4">
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/wibawabangkit"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-secondary transition-colors group"
@@ -357,7 +338,7 @@ function Footer() {
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/wibawabangkit"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-secondary transition-colors group"
@@ -366,7 +347,7 @@ function Footer() {
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="mailto:hello@wibawa.dev"
+              href="mailto:wibawabangkit31@gmail.com"
               className="p-2 rounded-lg hover:bg-secondary transition-colors group"
               aria-label="Email"
             >

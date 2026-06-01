@@ -1,60 +1,96 @@
 {
   "personalInfo": {
     "name": "Wibawa Bangkit",
-    "role": "IT Project Manager & System Analyst",
-    "tagline": "Menjembatani Kebutuhan Teknis dengan Tujuan Bisnis.",
-    "bio": "Mantan Mobile Developer dengan pengalaman luas di bidang Project Management dan Analisis Sistem. Memiliki rekam jejak terbukti dalam mengelola seluruh siklus proyek, serta memastikan setiap proyek selesai tepat waktu dan tepat sasaran."
+    "role": "Android Developer | System Analyst | Project Manager",
+    "tagline": "Membangun Teknologi, Merancang Sistem, dan Memimpin Kesuksesan Proyek Nasional.",
+    "bio": "Profesional IT serba bisa dengan perjalanan karir yang solid mulai dari Android Developer, System Analyst, hingga IT Project Manager. Memiliki keahlian teknis end-to-end dan rekam jejak terbukti dalam membangun serta memimpin seluruh siklus pengembangan sistem (SDLC) skala nasional."
   },
   "techStack": [
     {
-      "title": "Project Management",
-      "icon": "Box",
-      "skills": ["Trello", "Notion", "Leadership", "Managerial", "Communication"],
+      "title": "AI & Infrastructure",
+      "icon": "Scan",
+      "skills": ["Machine Learning", "Prompt Engineering", "AI Agents (Claude/Gemini)", "Docker", "GitHub", "GitLab", "VPN Networking"],
       "className": "md:col-span-2 md:row-span-2"
-    },
-    {
-      "title": "System Analysis",
-      "icon": "Cpu",
-      "skills": ["UML", "Flow Diagram", "Figma", "Draw.io", "System Concept"],
-      "className": ""
     },
     {
       "title": "Web Development",
       "icon": "Globe",
-      "skills": ["PHP", "Laravel", "CodeIgniter", "WordPress", ".NET"],
-      "className": ""
+      "skills": ["Laravel", "PHP", "CodeIgniter", "MySQL", ".NET", "WordPress"],
+      "className": "md:col-span-2"
     },
     {
       "title": "Mobile & Apps",
       "icon": "Radio",
-      "skills": ["Android", "Java", "Bugfixing", "API Integration"],
-      "className": "md:col-span-2"
+      "skills": ["Android", "Java", "API Integration", "Bugfixing"],
+      "className": ""
+    },
+    {
+      "title": "System Analysis",
+      "icon": "Cpu",
+      "skills": ["UML", "Figma", "Flow Diagram", "Draw.io"],
+      "className": ""
+    },
+    {
+      "title": "Project Management",
+      "icon": "Box",
+      "skills": ["Trello", "Notion", "Leadership", "Managerial", "Communication"],
+      "className": "md:col-span-4"
     }
   ],
   "projects": [
     {
       "title": "Aplikasi KIA & GERMAS PAS",
       "highlight": "Membangun aplikasi mobile Kesehatan Ibu dan Anak serta GERMAS PAS untuk KEMENKES RI.",
-      "icon": "Radio",
+      "icon": "HeartPulse",
       "tags": ["Android", "Java", "Figma", "Bugfixing"]
     },
     {
       "title": "Dashboard PT Merdeka Copper Gold",
       "highlight": "Pengembangan Dashboard Perusahaan Pertambangan dari perancangan analisis hingga implementasi.",
-      "icon": "Database",
+      "icon": "Activity",
       "tags": ["CodeIgniter", "MySQL", "UML", "System Analysis"]
     },
     {
       "title": "Koperasi Nasional & Sistem Penagihan",
       "highlight": "Manajemen proyek aplikasi Koperasi berskala nasional (Konvensional & Syariah) serta Sistem Penagihan (Debt Collector).",
-      "icon": "Box",
+      "icon": "Building2",
       "tags": ["Project Management", "Enterprise", "Finance"]
     },
     {
       "title": "Sistem Pengawasan KEMENKES RI",
       "highlight": "Sistem Analis untuk 4 website nasional KEMENKES RI (Kualitas Air Minum, TFU, TPM, dan Pelaporan Terpadu Kesehatan Olahraga).",
-      "icon": "Server",
+      "icon": "ShieldCheck",
       "tags": ["System Analysis", "UML", "Flow Diagram", "Government"]
+    },
+    {
+      "title": "IHYA & SALIHA KEMENPERIN RI",
+      "highlight": "Manajemen Proyek pembuatan website Penghargaan Industri Halal (IHYA) dan website serta aplikasi mobile Sistem Pendataan Industri Halal (SALIHA).",
+      "icon": "Award",
+      "tags": ["Project Management", "Web", "Mobile App", "Government"]
+    },
+    {
+      "title": "Aplikasi E-Voting BEM",
+      "highlight": "Tugas Akhir: Merancang dan membangun aplikasi pemilihan ketua BEM STIKOM CKI secara digital.",
+      "icon": "CheckSquare",
+      "tags": ["Java", "MySQL", "Figma", "E-Voting"]
+    },
+    {
+      "title": "Machine Learning Feses Bayi",
+      "highlight": "Pengembangan model Machine Learning untuk mendeteksi gejala gangguan kesehatan bayi berdasarkan klasifikasi citra feses.",
+      "icon": "Scan",
+      "tags": ["Machine Learning", "Health Tech", "AI"]
+    },
+    {
+      "title": "Aplikasi WargaKita",
+      "highlight": "Sistem informasi pengelolaan lingkungan cerdas yang terintegrasi dengan teknologi AI terkini (Claude, Gemini, Antigravity).",
+      "icon": "Users",
+      "tags": ["Laravel", "Docker", "AI Agents", "Antigravity"]
+    },
+    {
+      "title": "Sistem Operasional Klinik",
+      "highlight": "Pengembangan platform cerdas untuk pengelolaan operasional klinik kesehatan secara menyeluruh.",
+      "icon": "Stethoscope",
+      "tags": ["PHP", "MySQL", "Laravel", "Prompt Engineering"]
     }
   ],
   "timeline": [
@@ -78,6 +114,11 @@
       "year": "Agt 2022 - Mar 2023",
       "title": "Sistem Analis di CV Digital Media Kreasindo",
       "description": "Menjadi Sistem Analis dalam mengembangkan website Pengawasan Kualitas Air Minum Nasional, Tempat Fasilitas Umum (TFU), Tempat Pengolahan Makanan (TPM), dan Sistem Pelaporan Terpadu Kesehatan Olahraga KEMENKES RI. Merancang konsep, flow diagram, dan UML secara komprehensif."
+    },
+    {
+      "year": "Agt 2022 - Des 2022",
+      "title": "Project Manager di PT Jagogo Analisa Gemilang",
+      "description": "Mengatur proyek, membuat timeline dan laporan kemajuan klien, serta menyusun spesifikasi dan proposal teknis. Berhasil merilis website IHYA 2022 (Penghargaan Industri Halal) dan Sistem Pendataan Industri Halal (SALIHA 2023) KEMENPERIN RI (Web & Mobile)."
     },
     {
       "year": "Des 2021 - Agt 2022",
