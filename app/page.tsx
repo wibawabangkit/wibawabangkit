@@ -32,7 +32,7 @@ const t = {
     nav: { tech: "Keahlian", projects: "Proyek", career: "Karir", contact: "Kontak" },
     hero: { hi: "Halo, Saya", contact: "Hubungi Saya", cv: "Unduh CV" },
     tech: { subtitle: "Keahlian", title: "Tech Stack & Tools" },
-    portfolio: { subtitle: "Portofolio", title: "Studi Kasus Unggulan" },
+    portfolio: { subtitle: "Portofolio", title: "Pengalaman" },
     journey: { subtitle: "Perjalanan", title: "Lini Masa Karir", current: "Sekarang" },
     contact: { 
       subtitle: "Hubungi Saya", 
@@ -156,10 +156,15 @@ function HeroSection({ lang }: { lang: Lang }) {
           <div className="hidden lg:flex items-center justify-center">
             <div className="relative w-full max-w-md aspect-square">
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full animate-pulse" />
+              <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-70" />
               {/* Main card */}
               <div className="relative glass glass-glow rounded-3xl w-full h-full overflow-hidden border border-primary/20 flex items-center justify-center">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Tech Abstract" className="w-full h-full object-cover opacity-80 mix-blend-screen" />
+                <img 
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" 
+                  alt="Tech Abstract" 
+                  className="w-full h-full object-cover opacity-80 mix-blend-screen"
+                  fetchPriority="high"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
               {/* Decorative elements */}
@@ -223,6 +228,7 @@ function TechStackSection({ lang }: { lang: Lang }) {
 function CaseStudiesSection({ lang }: { lang: Lang }) {
   const { projects } = portfolioData[lang]
   const strings = t[lang].portfolio
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
     <section id="case-studies" className="px-4 sm:px-6 lg:px-8 py-24 bg-secondary/20">
@@ -239,10 +245,20 @@ function CaseStudiesSection({ lang }: { lang: Lang }) {
               <div
                 key={index}
                 className="group glass rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-300 cursor-pointer hover:-translate-y-1"
+                onClick={() => project.image && setSelectedImage(project.image)}
               >
                 <div className="aspect-video bg-gradient-to-br from-primary/10 via-secondary to-muted flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-[linear-gradient(rgba(56,189,248,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.03)_1px,transparent_1px)] bg-[size:20px_20px]" />
-                  <Icon className="w-16 h-16 text-primary/40 group-hover:text-primary/60 transition-colors relative z-10" />
+                  {project.image ? (
+                    <img 
+                      src={project.image.startsWith('/') ? `/wibawabangkit${project.image}` : project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover relative z-10 transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <Icon className="w-16 h-16 text-primary/40 group-hover:text-primary/60 transition-colors relative z-10" />
+                  )}
                 </div>
                 
                 <div className="p-6 space-y-4">
@@ -268,6 +284,31 @@ function CaseStudiesSection({ lang }: { lang: Lang }) {
           })}
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-md"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div 
+            className="relative max-w-6xl w-full max-h-[90vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button 
+              className="absolute -top-12 right-0 md:-right-12 md:top-0 p-2 bg-secondary hover:bg-secondary/80 rounded-full transition-colors text-foreground shadow-lg border border-primary/20 z-50"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <img 
+              src={selectedImage.startsWith('/') ? `/wibawabangkit${selectedImage}` : selectedImage} 
+              alt="Project preview" 
+              className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl border border-primary/20 animate-in zoom-in-95 duration-300"
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
@@ -304,14 +345,25 @@ function TimelineSection({ lang }: { lang: Lang }) {
                     <h3 className={`text-xl font-semibold mt-2 flex items-center gap-2 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
                       {item.title}
                       {item.current && (
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary">
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary whitespace-nowrap">
                           {strings.current}
                         </span>
                       )}
                     </h3>
-                    <p className="text-muted-foreground mt-2 text-sm leading-relaxed max-w-sm">
-                      {item.description}
-                    </p>
+                    <div className="text-muted-foreground mt-3 text-sm leading-relaxed max-w-sm inline-block">
+                      {item.description && item.description.includes('\n') ? (
+                        <ul className="space-y-2 text-left mt-2">
+                          {item.description.split('\n').map((line: string, j: number) => (
+                            <li key={j} className="relative pl-5">
+                              <span className="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-primary/60"></span>
+                              {line.replace(/^-\s*/, '')}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{item.description}</p>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="hidden md:block flex-1" />
@@ -403,8 +455,33 @@ function Footer({ lang }: { lang: Lang }) {
 function PrintableCV({ lang }: { lang: Lang }) {
   const data = portfolioData[lang]
   
+  const tCV = {
+    id: {
+      summary: "RINGKASAN PROFESIONAL",
+      experience: "PENGALAMAN KERJA",
+      education: "PENDIDIKAN",
+      organization: "PENGALAMAN ORGANISASI",
+      projects: "PROYEK",
+      skills: "KEMAMPUAN / SKILLS"
+    },
+    en: {
+      summary: "PROFESSIONAL SUMMARY",
+      experience: "WORK EXPERIENCE",
+      education: "EDUCATION",
+      organization: "ORGANIZATIONAL EXPERIENCE",
+      projects: "PROJECTS",
+      skills: "SKILLS"
+    }
+  }
+  const headings = tCV[lang]
+
+  const experiences = data.timeline.filter((item: any) => item.type === 'experience' || !item.type)
+  const educations = data.timeline.filter((item: any) => item.type === 'education')
+  const organizations = data.timeline.filter((item: any) => item.type === 'organization')
+  const allSkills = Array.from(new Set(data.techStack.flatMap((s: any) => s.skills))) as string[]
+
   return (
-    <div className="hidden print:block text-black bg-white font-sans max-w-4xl mx-auto">
+    <div className="hidden print:block text-slate-700 bg-white font-sans max-w-4xl mx-auto pb-12">
       <style>{`
         @page { size: A4 portrait; margin: 1.5cm 2cm; }
         @media print {
@@ -412,55 +489,137 @@ function PrintableCV({ lang }: { lang: Lang }) {
         }
       `}</style>
       
-      <h1 className="text-3xl font-bold mb-1">{data.personalInfo.name}</h1>
-      <p className="text-lg mb-4 border-b border-black pb-2">{data.personalInfo.role}</p>
+      <h1 className="text-3xl font-bold mb-1 text-slate-900">{data.personalInfo.name}</h1>
+      <p className="text-lg mb-4 text-slate-600">{data.personalInfo.role}</p>
       
-      <div className="text-sm mb-6 flex flex-wrap gap-x-6 gap-y-2">
+      <div className="text-sm mb-6 flex flex-wrap gap-x-6 gap-y-2 text-slate-600 border-b border-slate-200 pb-4">
         <span>Email: wibawabangkit31@gmail.com</span>
         <span>LinkedIn: linkedin.com/in/wibawabangkit</span>
         <span>GitHub: github.com/wibawabangkit</span>
       </div>
 
-      <h2 className="text-lg font-bold border-b border-black mb-2 uppercase break-after-avoid">Professional Summary</h2>
-      <p className="text-sm mb-6 leading-relaxed">{data.personalInfo.bio}</p>
+      {/* Summary Section */}
+      <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.summary}</h2>
+      <div className="w-full h-px bg-slate-200 mb-4"></div>
+      <p className="text-sm mb-8 leading-relaxed text-slate-700">{data.personalInfo.bio}</p>
 
-      <h2 className="text-lg font-bold border-b border-black mb-2 uppercase break-after-avoid">Experience & Education</h2>
-      <div className="space-y-4 mb-6">
-        {data.timeline.map((item: any, i: number) => {
-          const splitWord = lang === 'id' ? ' di ' : ' at '
-          const parts = item.title.split(splitWord)
-          const role = parts[0] || item.title
-          const company = parts[1] || ''
+      {/* Experience Section */}
+      {experiences.length > 0 && (
+        <>
+          <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.experience}</h2>
+          <div className="w-full h-px bg-slate-200 mb-4"></div>
+          <div className="space-y-5 mb-8">
+            {experiences.map((item: any, i: number) => {
+              const splitWord = lang === 'id' ? ' di ' : ' at '
+              const parts = item.title.split(splitWord)
+              const role = parts[0] || item.title
+              const company = parts[1] || ''
 
-          return (
-            <div key={i} className="break-inside-avoid">
-              <div className="flex justify-between font-bold text-sm">
-                <span>{company || role}</span>
-                <span>{item.year}</span>
-              </div>
-              {company && <div className="italic text-sm mb-1">{role}</div>}
-              <p className="text-sm leading-relaxed">{item.description}</p>
-            </div>
-          )
-        })}
-      </div>
+              return (
+                <div key={i} className="break-inside-avoid">
+                  <div className="flex justify-between font-bold text-slate-800 text-sm">
+                    <span>{company || role}</span>
+                    <span className="text-slate-600 font-medium">{item.year}</span>
+                  </div>
+                  {company && <div className="italic text-slate-600 text-sm mb-1.5">{role}</div>}
+                  {item.description && (
+                    <div className="text-sm leading-relaxed text-slate-700">
+                      {item.description.split('\n').length > 1 ? (
+                        <ul className="list-disc list-outside ml-4 space-y-1 mt-1">
+                          {item.description.split('\n').map((line: string, j: number) => (
+                            <li key={j}>{line.replace(/^-\s*/, '')}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{item.description}</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
 
-      <h2 className="text-lg font-bold border-b border-black mb-2 uppercase break-after-avoid">Projects</h2>
-      <div className="space-y-3 mb-6">
+      {/* Education Section */}
+      {educations.length > 0 && (
+        <>
+          <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.education}</h2>
+          <div className="w-full h-px bg-slate-200 mb-4"></div>
+          <div className="space-y-5 mb-8">
+            {educations.map((item: any, i: number) => {
+              const splitWord = lang === 'id' ? ' di ' : ' at '
+              const parts = item.title.split(splitWord)
+              const role = parts[0] || item.title
+              const company = parts[1] || ''
+
+              return (
+                <div key={i} className="break-inside-avoid">
+                  <div className="flex justify-between font-bold text-slate-800 text-sm">
+                    <span>{company || role}</span>
+                    <span className="text-slate-600 font-medium">{item.year}</span>
+                  </div>
+                  {company && (
+                    <div className="text-slate-600 text-sm mb-1.5">
+                      <span className="italic">{role}</span> <span className="text-slate-300 mx-1.5">|</span> {item.description}
+                    </div>
+                  )}
+                  {!company && <p className="text-sm leading-relaxed text-slate-700">{item.description}</p>}
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
+
+      {/* Organization Section */}
+      {organizations.length > 0 && (
+        <>
+          <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.organization}</h2>
+          <div className="w-full h-px bg-slate-200 mb-4"></div>
+          <div className="space-y-5 mb-8">
+            {organizations.map((item: any, i: number) => {
+              const splitWord = lang === 'id' ? ' di ' : ' at '
+              const parts = item.title.split(splitWord)
+              const role = parts[0] || item.title
+              const company = parts[1] || ''
+
+              return (
+                <div key={i} className="break-inside-avoid">
+                  <div className="flex justify-between font-bold text-slate-800 text-sm">
+                    <span>{company || role}</span>
+                    <span className="text-slate-600 font-medium">{item.year}</span>
+                  </div>
+                  {company && <div className="text-slate-600 italic text-sm mb-1.5">{role}</div>}
+                  {!company && <p className="text-sm leading-relaxed text-slate-700">{item.description}</p>}
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
+
+      {/* Projects Section */}
+      <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.projects}</h2>
+      <div className="w-full h-px bg-slate-200 mb-4"></div>
+      <div className="space-y-3 mb-8">
         {data.projects.map((proj: any, i: number) => (
           <div key={i} className="break-inside-avoid">
-            <span className="font-bold text-sm">{proj.title}</span> <span className="text-sm">- {proj.highlight}</span>
-            <div className="text-xs italic text-gray-700 mt-0.5">Tech: {proj.tags.join(', ')}</div>
+            <span className="font-bold text-slate-800 text-sm">{proj.title}</span> <span className="text-slate-700 text-sm">- {proj.highlight}</span>
+            <div className="text-xs italic text-slate-500 mt-0.5">Tech: {proj.tags.join(', ')}</div>
           </div>
         ))}
       </div>
 
-      <h2 className="text-lg font-bold border-b border-black mb-2 uppercase break-after-avoid">Skills</h2>
-      <div className="mb-6 break-inside-avoid">
-        {data.techStack.map((stack: any, i: number) => (
-          <div key={i} className="text-sm mb-1 break-inside-avoid">
-            <span className="font-bold">{stack.title}:</span> {stack.skills.join(', ')}
-          </div>
+      {/* Skills Section */}
+      <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.skills}</h2>
+      <div className="w-full h-px bg-slate-200 mb-4"></div>
+      <div className="mb-6 break-inside-avoid flex flex-wrap gap-2">
+        {allSkills.map((skill: string, i: number) => (
+          <span key={i} className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-md text-sm font-semibold text-slate-700">
+            {skill}
+          </span>
         ))}
       </div>
     </div>

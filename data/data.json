@@ -2,7 +2,7 @@
   "id": {
     "personalInfo": {
       "name": "Wibawa Bangkit",
-      "role": "Android Developer | System Analyst | Project Manager",
+      "role": "Website Developer | AI Developer | Android Developer | System Analyst | Project Manager",
       "tagline": "Membangun Teknologi, Merancang Sistem, dan Memimpin Kesuksesan Proyek Nasional.",
       "bio": "Profesional IT berpengalaman dengan kompetensi teknis yang komprehensif. Memiliki perjalanan karir yang solid mulai dari Android Developer, System Analyst, hingga IT Project Manager, serta rekam jejak yang terbukti dalam memimpin seluruh siklus pengembangan sistem (SDLC) berskala nasional."
     },
@@ -10,31 +10,63 @@
       {
         "title": "AI & Infrastructure",
         "icon": "Scan",
-        "skills": ["Machine Learning", "Prompt Engineering", "AI Agents (Claude/Gemini)", "Docker", "GitHub", "GitLab", "VPN Networking"],
+        "skills": [
+          "Machine Learning",
+          "Prompt Engineering",
+          "AI Agents (Claude/Gemini)",
+          "Docker",
+          "GitHub",
+          "GitLab",
+          "VPN Networking"
+        ],
         "className": "md:col-span-2 md:row-span-2"
       },
       {
         "title": "Web Development",
         "icon": "Globe",
-        "skills": ["Laravel", "PHP", "CodeIgniter", "MySQL", ".NET", "WordPress"],
+        "skills": [
+          "Laravel",
+          "PHP",
+          "CodeIgniter",
+          "MySQL",
+          ".NET",
+          "WordPress",
+          "PWA"
+        ],
         "className": "md:col-span-2"
       },
       {
         "title": "Mobile & Apps",
         "icon": "Radio",
-        "skills": ["Android", "Java", "API Integration", "Bugfixing"],
+        "skills": [
+          "Android",
+          "Java",
+          "API Integration",
+          "Bugfixing"
+        ],
         "className": ""
       },
       {
         "title": "System Analysis",
         "icon": "Cpu",
-        "skills": ["UML", "Figma", "Flow Diagram", "Draw.io"],
+        "skills": [
+          "UML",
+          "Figma",
+          "Flow Diagram",
+          "Draw.io"
+        ],
         "className": ""
       },
       {
         "title": "Project Management",
         "icon": "Box",
-        "skills": ["Trello", "Notion", "Leadership", "Managerial", "Communication"],
+        "skills": [
+          "Trello",
+          "Notion",
+          "Leadership",
+          "Managerial",
+          "Communication"
+        ],
         "className": "md:col-span-4"
       }
     ],
@@ -43,120 +75,196 @@
         "title": "Aplikasi KIA & GERMAS PAS",
         "highlight": "Membangun aplikasi mobile Kesehatan Ibu dan Anak serta GERMAS PAS untuk KEMENKES RI.",
         "icon": "HeartPulse",
-        "tags": ["Android", "Java", "Figma", "Bugfixing"]
+        "tags": [
+          "Android",
+          "Java",
+          "Figma",
+          "Bugfixing"
+        ],
+        "image": "/projects/kia-germas.png"
       },
       {
         "title": "Dashboard PT Merdeka Copper Gold",
         "highlight": "Pengembangan Dashboard Perusahaan Pertambangan dari perancangan analisis hingga implementasi.",
         "icon": "Activity",
-        "tags": ["CodeIgniter", "MySQL", "UML", "System Analysis"]
+        "tags": [
+          "CodeIgniter",
+          "MySQL",
+          "UML",
+          "System Analysis"
+        ],
+        "image": "/projects/merdeka-dashboard.png"
       },
       {
         "title": "Koperasi Nasional & Sistem Penagihan",
         "highlight": "Manajemen proyek aplikasi Koperasi berskala nasional (Konvensional & Syariah) serta Sistem Penagihan (Debt Collector).",
         "icon": "Building2",
-        "tags": ["Project Management", "Enterprise", "Finance"]
+        "tags": [
+          "Project Management",
+          "Enterprise",
+          "Finance"
+        ],
+        "image": "/projects/koperasi.png"
       },
       {
         "title": "Sistem Pengawasan KEMENKES RI",
-        "highlight": "Sistem Analis untuk 4 website nasional KEMENKES RI (Kualitas Air Minum, TFU, TPM, dan Pelaporan Terpadu Kesehatan Olahraga).",
+        "highlight": "Sistem Analis untuk 4 website nasional KEMENKES RI (Kualitas Air Minum, Tempat Fasilitas Umum, Tempat Pengolahan Makanan, dan Pelaporan Terpadu Kesehatan Olahraga).",
         "icon": "ShieldCheck",
-        "tags": ["System Analysis", "UML", "Flow Diagram", "Government"]
+        "tags": [
+          "System Analysis",
+          "UML",
+          "Flow Diagram",
+          "Government"
+        ],
+        "image": "/projects/kemenkes.jpg"
       },
       {
         "title": "IHYA & SALIHA KEMENPERIN RI",
         "highlight": "Manajemen Proyek pembuatan website Penghargaan Industri Halal (IHYA) dan website serta aplikasi mobile Sistem Pendataan Industri Halal (SALIHA).",
         "icon": "Award",
-        "tags": ["Project Management", "Web", "Mobile App", "Government"]
+        "tags": [
+          "Project Management",
+          "Web",
+          "Mobile App",
+          "Government"
+        ],
+        "image": "/projects/ihya-saliha.png"
       },
       {
         "title": "Aplikasi E-Voting BEM",
         "highlight": "Tugas Akhir: Merancang dan membangun aplikasi pemilihan ketua BEM STIKOM CKI secara digital.",
         "icon": "CheckSquare",
-        "tags": ["Java", "MySQL", "Figma", "E-Voting"]
+        "tags": [
+          "Java",
+          "MySQL",
+          "Figma",
+          "E-Voting"
+        ],
+        "image": "/projects/evoting-bem.png"
       },
       {
         "title": "Machine Learning Feses Bayi",
         "highlight": "Pengembangan model Machine Learning untuk mendeteksi gejala gangguan kesehatan bayi berdasarkan klasifikasi citra feses.",
         "icon": "Scan",
-        "tags": ["Machine Learning", "Health Tech", "AI"]
+        "tags": [
+          "Machine Learning",
+          "Health Tech",
+          "AI"
+        ],
+        "image": "/projects/ml-feses.jpg"
       },
       {
         "title": "Aplikasi WargaKita",
         "highlight": "Sistem informasi pengelolaan lingkungan cerdas yang terintegrasi dengan teknologi AI terkini (Claude, Gemini, Antigravity).",
+        "image": "/projects/wargakita.png",
         "icon": "Users",
-        "tags": ["Laravel", "Docker", "AI Agents", "Antigravity"]
+        "tags": [
+          "Laravel",
+          "PWA",
+          "Docker",
+          "AI Agents",
+          "Antigravity",
+          "Website Developer",
+          "AI Developer"
+        ]
       },
       {
         "title": "Sistem Operasional Klinik",
         "highlight": "Pengembangan platform cerdas untuk pengelolaan operasional klinik kesehatan secara menyeluruh.",
+        "image": "/projects/klinik.png",
         "icon": "Stethoscope",
-        "tags": ["PHP", "MySQL", "Laravel", "Prompt Engineering"]
+        "tags": [
+          "PHP",
+          "MySQL",
+          "Laravel",
+          "PWA",
+          "Prompt Engineering",
+          "AI Agents",
+          "Website Developer",
+          "AI Developer"
+        ]
       }
     ],
     "timeline": [
       {
         "year": "Jan 2024 - Sekarang",
         "title": "Project Manager Officer di PT Heksa Inti Kreasindo",
-        "description": "Mengelola klien, mengatur timeline proyek, merencanakan spesifikasi teknis, serta membuat proposal dan laporan progres rutin.",
-        "current": true
+        "description": "- Bertindak sebagai Project Manager Officer dalam mengelola klien, mengatur timeline proyek, merencanakan spesifikasi teknis, serta menyusun proposal dan laporan progres rutin.\n- Bertindak sebagai pengembang utama (Website & AI Developer) dalam merancang dan membangun Aplikasi WargaKita serta Sistem Operasional Klinik.",
+        "current": true,
+        "type": "experience"
       },
       {
         "year": "Mar 2023 - Jan 2026",
         "title": "Asisten Dosen di STIKOM Cipta Karya Informatika",
-        "description": "Menyusun rencana studi, membuat modul pembelajaran, mengajar, serta menyusun materi tugas dan ujian."
+        "description": "Menyusun rencana studi, membuat modul pembelajaran, mengajar, serta menyusun materi tugas dan ujian.",
+        "type": "experience"
       },
       {
         "year": "Mar 2023 - Sep 2023",
         "title": "Project Manager Officer di PT Prawathiya Karsa Pradiptha",
-        "description": "Bertanggung jawab mengelola proyek Aplikasi Koperasi Skala Nasional (Konvensional & Syariah) dan Sistem Penagihan (Mata Elang/Debt Collector). Mencakup pembuatan proposal teknis dan koordinasi dengan klien."
+        "description": "Bertanggung jawab mengelola proyek Aplikasi Koperasi Skala Nasional (Konvensional & Syariah) dan Sistem Penagihan (Mata Elang/Debt Collector). Mencakup pembuatan proposal teknis dan koordinasi dengan klien.",
+        "type": "experience"
       },
       {
         "year": "Agt 2022 - Mar 2023",
         "title": "Sistem Analis di CV Digital Media Kreasindo",
-        "description": "Menjadi Sistem Analis dalam mengembangkan website Pengawasan Kualitas Air Minum Nasional, Tempat Fasilitas Umum (TFU), Tempat Pengolahan Makanan (TPM), dan Sistem Pelaporan Terpadu Kesehatan Olahraga KEMENKES RI. Merancang konsep, flow diagram, dan UML secara komprehensif."
+        "description": "Menjadi Sistem Analis dalam mengembangkan website Pengawasan Kualitas Air Minum Nasional, Tempat Fasilitas Umum, Tempat Pengolahan Makanan, dan Sistem Pelaporan Terpadu Kesehatan Olahraga KEMENKES RI. Merancang konsep, flow diagram, dan UML secara komprehensif.",
+        "type": "experience"
       },
       {
         "year": "Agt 2022 - Des 2022",
         "title": "Project Manager di PT Jagogo Analisa Gemilang",
-        "description": "Mengatur proyek, membuat timeline dan laporan kemajuan klien, serta menyusun spesifikasi dan proposal teknis. Berhasil merilis website IHYA 2022 (Penghargaan Industri Halal) dan Sistem Pendataan Industri Halal (SALIHA 2023) KEMENPERIN RI (Web & Mobile)."
+        "description": "Mengatur proyek, membuat timeline dan laporan kemajuan klien, serta menyusun spesifikasi dan proposal teknis. Berhasil merilis website IHYA 2022 (Penghargaan Industri Halal) dan Sistem Pendataan Industri Halal (SALIHA 2023) KEMENPERIN RI (Web & Mobile).",
+        "type": "experience"
       },
       {
         "year": "Des 2021 - Agt 2022",
         "title": "Sistem Analis (Freelance) di CV Creative Support System",
-        "description": "Mengembangkan Dashboard untuk PT Merdeka Copper Gold dan menyusun arsitektur sistem dari awal hingga siap dikembangkan."
+        "description": "Mengembangkan Dashboard untuk PT Merdeka Copper Gold dan menyusun arsitektur sistem dari awal hingga siap dikembangkan.",
+        "type": "experience"
       },
       {
         "year": "Feb 2020 - Agt 2022",
         "title": "Mobile Developer di CV Digital Media Kreasindo",
-        "description": "Membangun dan memelihara aplikasi mobile KEMENKES RI berbasis Java (Android), merancang UML, serta melakukan integrasi data."
+        "description": "Membangun dan memelihara aplikasi mobile KEMENKES RI berbasis Java (Android), merancang UML, serta melakukan integrasi data.",
+        "type": "experience"
       },
       {
         "year": "Jan 2019 - Jan 2020",
         "title": "Service Advisor di Chevrolet Cibubur",
-        "description": "Menangani keluhan pelanggan, mengatur jadwal mekanik, serta menyelesaikan sertifikasi General Motor Level Managerial."
+        "description": "Menangani keluhan pelanggan, mengatur jadwal mekanik, serta menyelesaikan sertifikasi General Motor Level Managerial.",
+        "type": "experience"
       },
       {
         "year": "Agt 2017 - Des 2018",
         "title": "Teknisi / Mekanik di Chevrolet Pluit",
-        "description": "Melakukan analisa kerusakan, perbaikan, dan perawatan mobil berdasarkan arahan foreman."
+        "description": "Melakukan analisa kerusakan, perbaikan, dan perawatan mobil berdasarkan arahan foreman.",
+        "type": "experience"
       },
       {
-        "year": "2019 - 2021",
-        "title": "Ketua & Wakil Ketua BEM (Organisasi)",
-        "description": "Menjabat sebagai Wakil Ketua (2019-2020) dan Ketua (2020-2021) Badan Eksekutif Mahasiswa."
+        "year": "2020 - 2021",
+        "title": "Ketua di Badan Eksekutif Mahasiswa",
+        "description": "Menjabat sebagai Ketua Badan Eksekutif Mahasiswa.",
+        "type": "organization"
+      },
+      {
+        "year": "2019 - 2020",
+        "title": "Wakil Ketua di Badan Eksekutif Mahasiswa",
+        "description": "Menjabat sebagai Wakil Ketua Badan Eksekutif Mahasiswa.",
+        "type": "organization"
       },
       {
         "year": "2017 - 2021",
-        "title": "S1 Teknik Informatika di STIKOM Cipta Karya Informatika",
-        "description": "Lulus dengan IPK 3.50. Mempelajari fondasi pemrograman dan rekayasa perangkat lunak."
+        "title": "Teknik Informatika di Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika",
+        "description": "IPK: 3.50",
+        "type": "education"
       }
     ]
   },
   "en": {
     "personalInfo": {
       "name": "Wibawa Bangkit",
-      "role": "Android Developer | System Analyst | Project Manager",
+      "role": "Website Developer | AI Developer | Android Developer | System Analyst | Project Manager",
       "tagline": "Building Technology, Designing Systems, and Leading National Project Success.",
       "bio": "Experienced IT Professional with comprehensive technical expertise. Possessing a solid career progression from Android Developer and System Analyst to IT Project Manager, with a proven track record of leading full software development life cycles (SDLC) on a national scale."
     },
@@ -164,31 +272,63 @@
       {
         "title": "AI & Infrastructure",
         "icon": "Scan",
-        "skills": ["Machine Learning", "Prompt Engineering", "AI Agents (Claude/Gemini)", "Docker", "GitHub", "GitLab", "VPN Networking"],
+        "skills": [
+          "Machine Learning",
+          "Prompt Engineering",
+          "AI Agents (Claude/Gemini)",
+          "Docker",
+          "GitHub",
+          "GitLab",
+          "VPN Networking"
+        ],
         "className": "md:col-span-2 md:row-span-2"
       },
       {
         "title": "Web Development",
         "icon": "Globe",
-        "skills": ["Laravel", "PHP", "CodeIgniter", "MySQL", ".NET", "WordPress"],
+        "skills": [
+          "Laravel",
+          "PHP",
+          "CodeIgniter",
+          "MySQL",
+          ".NET",
+          "WordPress",
+          "PWA"
+        ],
         "className": "md:col-span-2"
       },
       {
         "title": "Mobile & Apps",
         "icon": "Radio",
-        "skills": ["Android", "Java", "API Integration", "Bugfixing"],
+        "skills": [
+          "Android",
+          "Java",
+          "API Integration",
+          "Bugfixing"
+        ],
         "className": ""
       },
       {
         "title": "System Analysis",
         "icon": "Cpu",
-        "skills": ["UML", "Figma", "Flow Diagram", "Draw.io"],
+        "skills": [
+          "UML",
+          "Figma",
+          "Flow Diagram",
+          "Draw.io"
+        ],
         "className": ""
       },
       {
         "title": "Project Management",
         "icon": "Box",
-        "skills": ["Trello", "Notion", "Leadership", "Managerial", "Communication"],
+        "skills": [
+          "Trello",
+          "Notion",
+          "Leadership",
+          "Managerial",
+          "Communication"
+        ],
         "className": "md:col-span-4"
       }
     ],
@@ -197,113 +337,189 @@
         "title": "KIA & GERMAS PAS App",
         "highlight": "Developed Maternal and Child Health (KIA) and GERMAS PAS mobile applications for the Indonesian Ministry of Health.",
         "icon": "HeartPulse",
-        "tags": ["Android", "Java", "Figma", "Bugfixing"]
+        "tags": [
+          "Android",
+          "Java",
+          "Figma",
+          "Bugfixing"
+        ],
+        "image": "/projects/kia-germas.png"
       },
       {
         "title": "PT Merdeka Copper Gold Dashboard",
         "highlight": "Developed a mining enterprise dashboard from system analysis and design to full implementation.",
         "icon": "Activity",
-        "tags": ["CodeIgniter", "MySQL", "UML", "System Analysis"]
+        "tags": [
+          "CodeIgniter",
+          "MySQL",
+          "UML",
+          "System Analysis"
+        ],
+        "image": "/projects/merdeka-dashboard.png"
       },
       {
         "title": "National Cooperative & Billing System",
         "highlight": "Managed national-scale cooperative applications (Conventional & Sharia) and external debt collection systems.",
         "icon": "Building2",
-        "tags": ["Project Management", "Enterprise", "Finance"]
+        "tags": [
+          "Project Management",
+          "Enterprise",
+          "Finance"
+        ],
+        "image": "/projects/koperasi.png"
       },
       {
         "title": "Ministry of Health Supervision Systems",
         "highlight": "System Analyst for 4 national websites (Drinking Water Quality, Public Facilities, Food Processing, and Sports Health Reporting).",
         "icon": "ShieldCheck",
-        "tags": ["System Analysis", "UML", "Flow Diagram", "Government"]
+        "tags": [
+          "System Analysis",
+          "UML",
+          "Flow Diagram",
+          "Government"
+        ],
+        "image": "/projects/kemenkes.jpg"
       },
       {
         "title": "IHYA & SALIHA (Ministry of Industry)",
         "highlight": "Project Management for Halal Industry Award (IHYA) website and Halal Industry Data System (SALIHA) web & mobile apps.",
         "icon": "Award",
-        "tags": ["Project Management", "Web", "Mobile App", "Government"]
+        "tags": [
+          "Project Management",
+          "Web",
+          "Mobile App",
+          "Government"
+        ],
+        "image": "/projects/ihya-saliha.png"
       },
       {
         "title": "BEM E-Voting Application",
         "highlight": "Final Project: Designed and built a digital E-Voting application for the university student council presidential election.",
         "icon": "CheckSquare",
-        "tags": ["Java", "MySQL", "Figma", "E-Voting"]
+        "tags": [
+          "Java",
+          "MySQL",
+          "Figma",
+          "E-Voting"
+        ],
+        "image": "/projects/evoting-bem.png"
       },
       {
         "title": "Baby Stool Machine Learning",
         "highlight": "Developed a Machine Learning model to detect infant health disorder symptoms based on stool image classification.",
         "icon": "Scan",
-        "tags": ["Machine Learning", "Health Tech", "AI"]
+        "tags": [
+          "Machine Learning",
+          "Health Tech",
+          "AI"
+        ],
+        "image": "/projects/ml-feses.jpg"
       },
       {
         "title": "WargaKita Application",
         "highlight": "Smart neighborhood management information system integrated with the latest AI technology (Claude, Gemini, Antigravity).",
+        "image": "/projects/wargakita.png",
         "icon": "Users",
-        "tags": ["Laravel", "Docker", "AI Agents", "Antigravity"]
+        "tags": [
+          "Laravel",
+          "PWA",
+          "Docker",
+          "AI Agents",
+          "Antigravity",
+          "Website Developer",
+          "AI Developer"
+        ]
       },
       {
         "title": "Clinic Operational System",
         "highlight": "Developed a smart platform for comprehensive daily healthcare clinic operational management.",
+        "image": "/projects/klinik.png",
         "icon": "Stethoscope",
-        "tags": ["PHP", "MySQL", "Laravel", "Prompt Engineering"]
+        "tags": [
+          "PHP",
+          "MySQL",
+          "Laravel",
+          "PWA",
+          "Prompt Engineering",
+          "AI Agents",
+          "Website Developer",
+          "AI Developer"
+        ]
       }
     ],
     "timeline": [
       {
         "year": "Jan 2024 - Present",
         "title": "Project Manager Officer at PT Heksa Inti Kreasindo",
-        "description": "Managing clients, arranging project timelines, planning technical specifications, and creating routine progress reports and proposals.",
-        "current": true
+        "description": "- Served as Project Manager Officer to manage clients, arrange project timelines, plan technical specifications, and create routine progress reports and proposals.\n- Acted as the lead developer (Website & AI Developer) in designing and building the WargaKita Application and Clinic Operational System.",
+        "current": true,
+        "type": "experience"
       },
       {
         "year": "Mar 2023 - Jan 2026",
         "title": "Teaching Assistant at STIKOM Cipta Karya Informatika",
-        "description": "Preparing study plans, creating learning modules, teaching classes, and formulating assignments and exams."
+        "description": "Preparing study plans, creating learning modules, teaching classes, and formulating assignments and exams.",
+        "type": "experience"
       },
       {
         "year": "Mar 2023 - Sep 2023",
         "title": "Project Manager Officer at PT Prawathiya Karsa Pradiptha",
-        "description": "Managed National Scale Cooperative Applications (Conventional & Sharia) and Debt Collector Billing Systems. Included technical proposal creation and client coordination."
+        "description": "Managed National Scale Cooperative Applications (Conventional & Sharia) and Debt Collector Billing Systems. Included technical proposal creation and client coordination.",
+        "type": "experience"
       },
       {
         "year": "Aug 2022 - Mar 2023",
         "title": "System Analyst at CV Digital Media Kreasindo",
-        "description": "System Analyst for Indonesian Ministry of Health websites (National Drinking Water Quality, Public Facilities, Food Processing, and Sports Health Reporting). Designed concepts, flow diagrams, and UML comprehensively."
+        "description": "System Analyst for Indonesian Ministry of Health websites (National Drinking Water Quality, Public Facilities, Food Processing, and Sports Health Reporting). Designed concepts, flow diagrams, and UML comprehensively.",
+        "type": "experience"
       },
       {
         "year": "Aug 2022 - Dec 2022",
         "title": "Project Manager at PT Jagogo Analisa Gemilang",
-        "description": "Managed projects, created timelines and client progress reports, and drafted technical specifications. Successfully released the IHYA 2022 (Halal Industry Award) website and SALIHA 2023 (Halal Industry Data System) for the Ministry of Industry."
+        "description": "Managed projects, created timelines and client progress reports, and drafted technical specifications. Successfully released the IHYA 2022 (Halal Industry Award) website and SALIHA 2023 (Halal Industry Data System) for the Ministry of Industry.",
+        "type": "experience"
       },
       {
         "year": "Dec 2021 - Aug 2022",
         "title": "System Analyst (Freelance) at CV Creative Support System",
-        "description": "Developed the PT Merdeka Copper Gold Dashboard and designed the system architecture from scratch to development-ready phase."
+        "description": "Developed the PT Merdeka Copper Gold Dashboard and designed the system architecture from scratch to development-ready phase.",
+        "type": "experience"
       },
       {
         "year": "Feb 2020 - Aug 2022",
         "title": "Mobile Developer at CV Digital Media Kreasindo",
-        "description": "Built and maintained Indonesian Ministry of Health mobile applications based on Java (Android), designed UML, and performed data integration."
+        "description": "Built and maintained Indonesian Ministry of Health mobile applications based on Java (Android), designed UML, and performed data integration.",
+        "type": "experience"
       },
       {
         "year": "Jan 2019 - Jan 2020",
         "title": "Service Advisor at Chevrolet Cibubur",
-        "description": "Handled customer complaints, managed mechanic schedules, and completed the General Motor Level Managerial certification."
+        "description": "Handled customer complaints, managed mechanic schedules, and completed the General Motor Level Managerial certification.",
+        "type": "experience"
       },
       {
         "year": "Aug 2017 - Dec 2018",
         "title": "Technician / Mechanic at Chevrolet Pluit",
-        "description": "Performed automotive damage analysis, repairs, and maintenance based on foreman instructions."
+        "description": "Performed automotive damage analysis, repairs, and maintenance based on foreman instructions.",
+        "type": "experience"
       },
       {
-        "year": "2019 - 2021",
-        "title": "President & Vice President of Student Council (Organization)",
-        "description": "Served as Vice President (2019-2020) and President (2020-2021) of the University Student Executive Board (BEM)."
+        "year": "2020 - 2021",
+        "title": "President at Student Executive Board",
+        "description": "Served as the President of the Student Executive Board.",
+        "type": "organization"
+      },
+      {
+        "year": "2019 - 2020",
+        "title": "Vice President at Student Executive Board",
+        "description": "Served as the Vice President of the Student Executive Board.",
+        "type": "organization"
       },
       {
         "year": "2017 - 2021",
-        "title": "Bachelor of Informatics Engineering at STIKOM Cipta Karya Informatika",
-        "description": "Graduated with a 3.50 GPA. Studied the foundations of programming and software engineering."
+        "title": "Informatics Engineering at Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika",
+        "description": "GPA: 3.50",
+        "type": "education"
       }
     ]
   }
