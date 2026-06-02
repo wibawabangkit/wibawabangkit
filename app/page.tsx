@@ -412,39 +412,32 @@ function Footer({ lang }: { lang: Lang }) {
   return (
     <footer className="px-4 sm:px-6 lg:px-8 py-12 border-t border-border">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-primary">W</span>
-            <span className="text-muted-foreground text-sm">© 2024 Wibawa. {strings.footer}</span>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <a
-              href="https://linkedin.com/in/wibawabangkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-secondary transition-colors group"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a
-              href="https://github.com/wibawabangkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-secondary transition-colors group"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a
-              href="mailto:wibawabangkit31@gmail.com"
-              className="p-2 rounded-lg hover:bg-secondary transition-colors group"
-              aria-label="Email"
-            >
-              <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-          </div>
+        <div className="flex items-center justify-center gap-6">
+          <a
+            href="https://linkedin.com/in/wibawabangkit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full hover:bg-primary/10 hover:text-primary transition-colors group bg-secondary/50"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+          </a>
+          <a
+            href="https://github.com/wibawabangkit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full hover:bg-primary/10 hover:text-primary transition-colors group bg-secondary/50"
+            aria-label="GitHub"
+          >
+            <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+          </a>
+          <a
+            href="mailto:wibawabangkit31@gmail.com"
+            className="p-3 rounded-full hover:bg-primary/10 hover:text-primary transition-colors group bg-secondary/50"
+            aria-label="Email"
+          >
+            <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+          </a>
         </div>
       </div>
     </footer>
@@ -489,13 +482,13 @@ function PrintableCV({ lang }: { lang: Lang }) {
         }
       `}</style>
       
-      <h1 className="text-3xl font-bold mb-1 text-slate-900">{data.personalInfo.name}</h1>
-      <p className="text-lg mb-4 text-slate-600">{data.personalInfo.role}</p>
-      
-      <div className="text-sm mb-6 flex flex-wrap gap-x-6 gap-y-2 text-slate-600 border-b border-slate-200 pb-4">
-        <span>Email: wibawabangkit31@gmail.com</span>
-        <span>LinkedIn: linkedin.com/in/wibawabangkit</span>
-        <span>GitHub: github.com/wibawabangkit</span>
+      <div className="text-center border-b border-slate-200 pb-4 mb-6">
+        <h1 className="text-3xl font-bold mb-3 text-slate-900">{data.personalInfo.name}</h1>
+        <div className="text-sm flex flex-wrap justify-center gap-x-6 gap-y-2 text-slate-600">
+          <span>Email: wibawabangkit31@gmail.com</span>
+          <span>LinkedIn: linkedin.com/in/wibawabangkit</span>
+          <span>Jakarta, Indonesia</span>
+        </div>
       </div>
 
       {/* Summary Section */}
@@ -613,13 +606,16 @@ function PrintableCV({ lang }: { lang: Lang }) {
       </div>
 
       {/* Skills Section */}
-      <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.skills}</h2>
-      <div className="w-full h-px bg-slate-200 mb-4"></div>
-      <div className="mb-6 break-inside-avoid flex flex-wrap gap-2">
-        {allSkills.map((skill: string, i: number) => (
-          <span key={i} className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-md text-sm font-semibold text-slate-700">
-            {skill}
-          </span>
+      <div className="break-inside-avoid-page">
+        <h2 className="text-[15px] font-bold text-slate-800 tracking-wider mb-2 uppercase break-after-avoid">{headings.skills}</h2>
+        <div className="w-full h-px bg-slate-200 mb-4 break-after-avoid"></div>
+      </div>
+      <div className="mb-6 space-y-1.5">
+        {data.techStack.map((category: any, i: number) => (
+          <div key={i} className="text-sm leading-relaxed break-inside-avoid">
+            <span className="font-bold text-slate-800">{category.title}:</span>{" "}
+            <span className="text-slate-700">{category.skills.join(', ')}</span>
+          </div>
         ))}
       </div>
     </div>

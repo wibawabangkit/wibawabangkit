@@ -4,7 +4,7 @@
       "name": "Wibawa Bangkit",
       "role": "Website Developer | AI Developer | Android Developer | System Analyst | Project Manager",
       "tagline": "Membangun Teknologi, Merancang Sistem, dan Memimpin Kesuksesan Proyek Nasional.",
-      "bio": "Profesional IT berpengalaman dengan kompetensi teknis yang komprehensif. Memiliki perjalanan karir yang solid mulai dari Android Developer, System Analyst, hingga IT Project Manager, serta rekam jejak yang terbukti dalam memimpin seluruh siklus pengembangan sistem (SDLC) berskala nasional."
+      "bio": "Profesional IT dengan pengalaman teknis yang komprehensif, memiliki perjalanan karir dari Android Developer, System Analyst, hingga IT Project Manager. Berpengalaman dalam merancang, mengembangkan, dan mengelola proyek teknologi informasi berskala nasional untuk sektor pemerintahan maupun swasta."
     },
     "techStack": [
       {
@@ -17,7 +17,11 @@
           "Docker",
           "GitHub",
           "GitLab",
-          "VPN Networking"
+          "VPN Networking",
+          "AI Developer",
+          "AI",
+          "Health Tech",
+          "Antigravity"
         ],
         "className": "md:col-span-2 md:row-span-2"
       },
@@ -31,7 +35,9 @@
           "MySQL",
           ".NET",
           "WordPress",
-          "PWA"
+          "PWA",
+          "Website Developer",
+          "Web"
         ],
         "className": "md:col-span-2"
       },
@@ -42,7 +48,9 @@
           "Android",
           "Java",
           "API Integration",
-          "Bugfixing"
+          "Bugfixing",
+          "Mobile App",
+          "E-Voting"
         ],
         "className": ""
       },
@@ -53,7 +61,8 @@
           "UML",
           "Figma",
           "Flow Diagram",
-          "Draw.io"
+          "Draw.io",
+          "Dokumen Proyek"
         ],
         "className": ""
       },
@@ -65,7 +74,14 @@
           "Notion",
           "Leadership",
           "Managerial",
-          "Communication"
+          "Communication",
+          "Enterprise",
+          "Finance",
+          "Government",
+          "Administrasi",
+          "Dokumen Proyek",
+          "IT Procurement",
+          "IT Purchasing"
         ],
         "className": "md:col-span-4"
       }
@@ -143,8 +159,8 @@
         "image": "/projects/evoting-bem.png"
       },
       {
-        "title": "Machine Learning Feses Bayi",
-        "highlight": "Pengembangan model Machine Learning untuk mendeteksi gejala gangguan kesehatan bayi berdasarkan klasifikasi citra feses.",
+        "title": "Machine Learning Feses Bayi (Penelitian S1)",
+        "highlight": "Penelitian S1: Pengembangan model Machine Learning untuk mendeteksi gejala gangguan kesehatan bayi berdasarkan klasifikasi citra feses.",
         "icon": "Scan",
         "tags": [
           "Machine Learning",
@@ -189,7 +205,7 @@
       {
         "year": "Jan 2024 - Sekarang",
         "title": "Project Manager Officer di PT Heksa Inti Kreasindo",
-        "description": "- Bertindak sebagai Project Manager Officer dalam mengelola klien, mengatur timeline proyek, merencanakan spesifikasi teknis, serta menyusun proposal dan laporan progres rutin.\n- Bertindak sebagai pengembang utama (Website & AI Developer) dalam merancang dan membangun Aplikasi WargaKita serta Sistem Operasional Klinik.",
+        "description": "- Bertindak sebagai Project Manager Officer dalam mengelola klien, mengatur timeline proyek, merencanakan spesifikasi teknis, serta menyusun proposal dan laporan progres rutin.\n- Bertindak sebagai pengembang utama (Website & AI Developer) dalam merancang dan membangun Aplikasi WargaKita serta Sistem Operasional Klinik.\n- Bertanggung jawab atas proses procurement (pengadaan) dan purchasing barang/perangkat IT yang dibutuhkan untuk kelancaran operasional proyek.",
         "current": true,
         "type": "experience"
       },
@@ -201,7 +217,7 @@
       },
       {
         "year": "Mar 2023 - Sep 2023",
-        "title": "Project Manager Officer di PT Prawathiya Karsa Pradiptha",
+        "title": "Project Manager Officer (On Project) di PT Prawathiya Karsa Pradiptha",
         "description": "Bertanggung jawab mengelola proyek Aplikasi Koperasi Skala Nasional (Konvensional & Syariah) dan Sistem Penagihan (Mata Elang/Debt Collector). Mencakup pembuatan proposal teknis dan koordinasi dengan klien.",
         "type": "experience"
       },
@@ -213,7 +229,7 @@
       },
       {
         "year": "Agt 2022 - Des 2022",
-        "title": "Project Manager di PT Jagogo Analisa Gemilang",
+        "title": "Project Manager (Freelance) di PT Jagogo Analisa Gemilang",
         "description": "Mengatur proyek, membuat timeline dan laporan kemajuan klien, serta menyusun spesifikasi dan proposal teknis. Berhasil merilis website IHYA 2022 (Penghargaan Industri Halal) dan Sistem Pendataan Industri Halal (SALIHA 2023) KEMENPERIN RI (Web & Mobile).",
         "type": "experience"
       },
@@ -266,7 +282,7 @@
       "name": "Wibawa Bangkit",
       "role": "Website Developer | AI Developer | Android Developer | System Analyst | Project Manager",
       "tagline": "Building Technology, Designing Systems, and Leading National Project Success.",
-      "bio": "Experienced IT Professional with comprehensive technical expertise. Possessing a solid career progression from Android Developer and System Analyst to IT Project Manager, with a proven track record of leading full software development life cycles (SDLC) on a national scale."
+      "bio": "An IT professional with comprehensive technical experience, possessing a career progression from Android Developer and System Analyst to IT Project Manager. Experienced in designing, developing, and managing national-scale information technology projects for both government and private sectors."
     },
     "techStack": [
       {
@@ -279,7 +295,11 @@
           "Docker",
           "GitHub",
           "GitLab",
-          "VPN Networking"
+          "VPN Networking",
+          "AI Developer",
+          "AI",
+          "Health Tech",
+          "Antigravity"
         ],
         "className": "md:col-span-2 md:row-span-2"
       },
@@ -293,7 +313,9 @@
           "MySQL",
           ".NET",
           "WordPress",
-          "PWA"
+          "PWA",
+          "Website Developer",
+          "Web"
         ],
         "className": "md:col-span-2"
       },
@@ -304,7 +326,9 @@
           "Android",
           "Java",
           "API Integration",
-          "Bugfixing"
+          "Bugfixing",
+          "Mobile App",
+          "E-Voting"
         ],
         "className": ""
       },
@@ -315,7 +339,8 @@
           "UML",
           "Figma",
           "Flow Diagram",
-          "Draw.io"
+          "Draw.io",
+          "Project Documentation"
         ],
         "className": ""
       },
@@ -327,7 +352,14 @@
           "Notion",
           "Leadership",
           "Managerial",
-          "Communication"
+          "Communication",
+          "Enterprise",
+          "Finance",
+          "Government",
+          "Administration",
+          "Project Documentation",
+          "IT Procurement",
+          "IT Purchasing"
         ],
         "className": "md:col-span-4"
       }
@@ -405,8 +437,8 @@
         "image": "/projects/evoting-bem.png"
       },
       {
-        "title": "Baby Stool Machine Learning",
-        "highlight": "Developed a Machine Learning model to detect infant health disorder symptoms based on stool image classification.",
+        "title": "Baby Stool Machine Learning (Bachelor's Thesis)",
+        "highlight": "Bachelor's Thesis: Developed a Machine Learning model to detect infant health disorder symptoms based on stool image classification.",
         "icon": "Scan",
         "tags": [
           "Machine Learning",
@@ -451,7 +483,7 @@
       {
         "year": "Jan 2024 - Present",
         "title": "Project Manager Officer at PT Heksa Inti Kreasindo",
-        "description": "- Served as Project Manager Officer to manage clients, arrange project timelines, plan technical specifications, and create routine progress reports and proposals.\n- Acted as the lead developer (Website & AI Developer) in designing and building the WargaKita Application and Clinic Operational System.",
+        "description": "- Served as Project Manager Officer to manage clients, arrange project timelines, plan technical specifications, and create routine progress reports and proposals.\n- Acted as the lead developer (Website & AI Developer) in designing and building the WargaKita Application and Clinic Operational System.\n- Responsible for the procurement and purchasing process of IT goods and hardware required for project operations.",
         "current": true,
         "type": "experience"
       },
@@ -463,7 +495,7 @@
       },
       {
         "year": "Mar 2023 - Sep 2023",
-        "title": "Project Manager Officer at PT Prawathiya Karsa Pradiptha",
+        "title": "Project Manager Officer (On Project) at PT Prawathiya Karsa Pradiptha",
         "description": "Managed National Scale Cooperative Applications (Conventional & Sharia) and Debt Collector Billing Systems. Included technical proposal creation and client coordination.",
         "type": "experience"
       },
@@ -475,7 +507,7 @@
       },
       {
         "year": "Aug 2022 - Dec 2022",
-        "title": "Project Manager at PT Jagogo Analisa Gemilang",
+        "title": "Project Manager (Freelance) at PT Jagogo Analisa Gemilang",
         "description": "Managed projects, created timelines and client progress reports, and drafted technical specifications. Successfully released the IHYA 2022 (Halal Industry Award) website and SALIHA 2023 (Halal Industry Data System) for the Ministry of Industry.",
         "type": "experience"
       },
